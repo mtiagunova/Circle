@@ -6,15 +6,15 @@ public class Circle {
     // Задание:
     // Известна площадь некоторого круга S = 1661 (округлена до целых)
     // Используя метод sqrt() и константу PI класса Math, найдите, чему равен радиус r
-    // Окрулите ответ до целых с помощью метода round()
+    // Округлите ответ до целых с помощью метода round()
 
     double S = 1661;
-    double r;
+    double r = 0;
 
-    public double getRadius() {
+    public void getRadius() {
         // Начало решения
-        r = Math.round(Math.sqrt(this.S / Math.PI));
+        double radius = Math.round(Math.sqrt(this.S / Math.PI));
         // Конец решения
-        return r;
+        this.r = radius;
     }
 }

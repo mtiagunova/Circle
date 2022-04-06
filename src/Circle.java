@@ -12,9 +12,8 @@ public class Circle {
     double r = 0;
 
     public void getRadius() {
-        // Начало решения
+        // Решение
         double radius = Math.round(Math.sqrt(this.S / Math.PI));
-        // Конец решения
         this.r = radius;
     }
 }
